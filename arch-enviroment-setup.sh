@@ -1,14 +1,27 @@
 # https://www.ostechnix.com/install-yaourt-arch-linux/
 
 sudo pacman -S --needed base-devel git wget yajl --noconfirm && \
+
 yaourt -S sublime-text-dev smartgit telegram-desktop-bin --noconfirm && \
+
+## nodejs ecosystem
 yaourt -S nodejs npm  yarn --noconfirm && \
+
+## college
+yaourt -S astah-community --noconfirm && \
+
+## java environment
 # yaourt -S java-environment=8 --noconfirm && \
 # yaourt -S android-platform android-sdk android-sdk-platform-tools android-sdk-build-tools gradle --noconfirm && \
-yaourt -S docker docker-compose --noconfirm && \
-yaourt -S ttf-font ttf-fira-code powerline powerline-fonts ttf-liberation screenfetch figlet ttf-ubuntu-font-family --noconfirm && \
-yaourt -S pgadmin3 dbeaver redis-desktop-manager insomnia --noconfirm
 
+## docker
+yaourt -S docker docker-compose --noconfirm && \
+
+## fonts
+yaourt -S ttf-font ttf-fira-code powerline powerline-fonts ttf-liberation screenfetch figlet ttf-ubuntu-font-family --noconfirm && \
+
+## utilities
+yaourt -S pgadmin3 dbeaver redis-desktop-manager insomnia --noconfirm
 
 # sudo groupadd docker && \
 sudo usermod -aG docker $USER && \
