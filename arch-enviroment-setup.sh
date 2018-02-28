@@ -10,8 +10,11 @@ yaourt -S nodejs npm  yarn --noconfirm && \
 ## college
 yaourt -S astah-community --noconfirm && \
 
+## IDEs
+yaourt -S intellij-idea-ultimate-edition phpstorm goland && \
+
 ## java environment
-# yaourt -S java-environment=8 --noconfirm && \
+yaourt -S java-environment=8 --noconfirm && \
 # yaourt -S android-platform android-sdk android-sdk-platform-tools android-sdk-build-tools gradle --noconfirm && \
 
 ## docker
