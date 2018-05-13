@@ -11,7 +11,8 @@ yaourt -S nodejs npm  yarn --noconfirm && \
 yaourt -S astah-community --noconfirm && \
 
 ## IDEs
-yaourt -S intellij-idea-ultimate-edition phpstorm goland && \
+# yaourt -S intellij-idea-ultimate-edition phpstorm goland && \
+yaourt -S eclipse-java && \
 
 ## java environment
 yaourt -S java-environment=8 --noconfirm && \
@@ -32,3 +33,6 @@ yaourt -S google-chrome atom terminator visual-studio-code-bin && \
 sudo usermod -aG docker $USER && \
 sudo systemctl enable docker && \
 sudo systemctl start docker
+
+# notify changes
+echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-watches.conf && sudo sysctl --system
