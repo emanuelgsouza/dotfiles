@@ -29,6 +29,9 @@ yaourt -S pgadmin3 dbeaver redis-desktop-manager insomnia --noconfirm && \
 
 yaourt -S google-chrome atom terminator visual-studio-code-bin && \
 
+# enable gnome-extension
+yaourt -S gnome-tweaks chrome-gnome-shell && \
+
 # sudo groupadd docker && \
 sudo usermod -aG docker $USER && \
 sudo systemctl enable docker && \
