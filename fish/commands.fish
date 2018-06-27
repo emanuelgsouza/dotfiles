@@ -103,3 +103,7 @@ end
 function elixir
   docker run -it --rm --name elixir-inst1 -v (pwd):/usr/src/myapp -w /usr/src/myapp elixir elixir $argv
 end
+
+function gitHelperStore
+  git config credential.helper store
+end
