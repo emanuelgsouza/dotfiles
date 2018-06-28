@@ -107,3 +107,7 @@ end
 function gitHelperStore
   git config credential.helper store
 end
+
+function updateRepository
+  git checkout develop ; git merge master ; git push
+end
