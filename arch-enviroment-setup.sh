@@ -24,7 +24,9 @@ yay -S ttf-fira-code powerline powerline-fonts ttf-liberation screenfetch figlet
 ## utilities
 yay -S pgadmin3 dbeaver redis-desktop-manager insomnia --noconfirm && \
 
-yay -S google-chrome atom terminator visual-studio-code-bin && \
+yay -S google-chrome atom terminator visual-studio-code-bin filezilla && \
+
+yay -S htop && \
 
 # enable gnome-extension
 yay -S gnome-tweaks chrome-gnome-shell && \
