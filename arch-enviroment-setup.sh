@@ -26,7 +26,7 @@ yay -S pgadmin3 dbeaver redis-desktop-manager insomnia --noconfirm && \
 
 yay -S google-chrome atom terminator visual-studio-code-bin filezilla && \
 
-yay -S htop laverna && \
+yay -S htop laverna workflowy && \
 
 # enable gnome-extension
 yay -S gnome-tweaks chrome-gnome-shell && \
