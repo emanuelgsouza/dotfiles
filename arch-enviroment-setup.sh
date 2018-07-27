@@ -1,6 +1,6 @@
 sudo pacman -S --needed base-devel git wget yajl --noconfirm && \
 
-yay -S smartgit telegram-desktop-bin --noconfirm && \
+yay -S smartgit franz cerebro-git telegram-desktop-bin --noconfirm && \
 
 ## nodejs ecosystem
 yay -S nodejs npm  yarn --noconfirm && \
