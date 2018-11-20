@@ -4,6 +4,7 @@
   title_inactive_fg_color = "#eceff1"
   title_transmit_bg_color = "#263238"
   title_transmit_fg_color = "#eceff1"
+  window_state = maximise
 [keybindings]
 [layouts]
   [[default]]
