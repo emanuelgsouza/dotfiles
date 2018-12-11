@@ -4,6 +4,8 @@ RUN pip install --upgrade pip
 
 RUN pip install psycopg2
 
+RUN pip install psycopg2-binary
+
 RUN pip install plotly
 
 # Configuring access to Jupyter

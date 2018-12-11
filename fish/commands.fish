@@ -9,7 +9,7 @@ set A_NPM_CONFIG    $A_CACHE_HOME/npm-config
 set A_NPM_CACHE     $A_CACHE_HOME/npm-cache
 set A_COMPOSER_CACHE  $A_CACHE_HOME/composer
 
-# When using private projects, a SSH Key may be needed
+# When using private projects a SSH Key may be needed
 # this line will provide your user ssh key
 set A_SSH_HOME      $HOME/.ssh
 
@@ -110,4 +110,12 @@ end
 
 function updateRepository
   git checkout develop ; git merge master ; git push
+end
+
+function jupyter
+  docker run --name jupyter_exec -v (pwd):'/home/workspace' --network=host --rm -i -t anaconda_base jupyter notebook --allow-root --notebook-dir=/home/workspace --ip='0.0.0.0' --port=8888 --no-browser
+end
+
+function python
+  docker run --name python_exec -v (pwd):'/home/workspace' --network=host --rm -i -t -w=/home/workspace anaconda_base python $argv
 end
