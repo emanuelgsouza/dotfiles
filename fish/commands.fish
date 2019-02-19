@@ -113,9 +113,9 @@ function updateRepository
 end
 
 function jupyter
-  docker run --name jupyter_exec -v (pwd):'/home/workspace' --network=host --rm -i -t anaconda_base jupyter notebook --allow-root --notebook-dir=/home/workspace --ip='0.0.0.0' --port=8888 --no-browser
+  docker run --name jupyter_exec -v (pwd):'/home/workspace' --network=host --rm -i -t jupyter_local
 end
 
 function python
-  docker run --name python_exec -v (pwd):'/home/workspace' --network=host --rm -i -t -w=/home/workspace anaconda_base python $argv
+  docker run --name python_exec -v (pwd):'/home/workspace' --network=host --rm -i -t -w=/home/workspace anaconda_local python $argv
 end
