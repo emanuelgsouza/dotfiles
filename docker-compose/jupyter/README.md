@@ -15,13 +15,13 @@ O objetivo deste Dockerfile é disponibilizar uma imagem com algumas pré-config
 1. Criar a imagem:
 
 ```sh
-docker build . -t jupyter:latest
+docker build . -t jupyter_local:latest
 ```
 
 2. Executar um comando do container:
 
 ```sh
-docker run --name jupyter_notebook -v '/path/to/you/want':'/home/workspace/notebooks' --network=host --rm -i -t jupyter:latest
+docker run --name jupyter_notebook -v '/path/to/you/want':'/home/workspace/notebooks' --network=host --rm -i -t jupyter_local:latest
 ```
 
 ## Considerações importantes
