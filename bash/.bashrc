@@ -116,6 +116,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
+function gitHelperStore () {
+    git config credential.helper store
+}
+
 source /home/emanuel/.config/tevun/.bashrc
 
 clear
