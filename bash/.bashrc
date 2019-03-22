@@ -120,9 +120,11 @@ function gitHelperStore () {
     git config credential.helper store
 }
 
-source /home/emanuel/.config/tevun/.bashrc
-
 clear
 echo -ne "${red}Hoje é:\t\t${cyan}" `date`; echo ""
 echo -e "${red}Kernel: \t${cyan}" `uname -smr`
 echo -e "${cyan}"; cal -3
+
+PATH=$PATH:${HOME}/bin
+
+PATH=$PATH:${HOME}/bin/node/bin
