@@ -2,6 +2,19 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+PATH=$PATH:${HOME}/bin
+
+PATH=$PATH:${HOME}/bin/node/bin
+
+# comands
+function gitHelperStore () {
+  git config credential.helper store
+}
+
+function updateRepository () {
+  git checkout develop ; git merge master ; git push
+}
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -116,15 +129,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-function gitHelperStore () {
-    git config credential.helper store
-}
-
 clear
 echo -ne "${red}Hoje é:\t\t${cyan}" `date`; echo ""
 echo -e "${red}Kernel: \t${cyan}" `uname -smr`
 echo -e "${cyan}"; cal -3
-
-PATH=$PATH:${HOME}/bin
-
-PATH=$PATH:${HOME}/bin/node/bin
