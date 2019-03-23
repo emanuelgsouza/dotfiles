@@ -2,9 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-PATH=$PATH:${HOME}/bin
+export PATH=$PATH:${HOME}/bin
 
-PATH=$PATH:${HOME}/bin/node/bin
+export PATH=$PATH:${HOME}/bin/node/bin
 
 # comands
 function gitHelperStore () {
