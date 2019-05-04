@@ -1,22 +1,14 @@
 #!/usr/bin/env bash
 
-# https://www.ostechnix.com/install-yaourt-arch-linux/
-# https://aur.archlinux.org/packages/yay-bin/
+yay -S telegram-desktop --noconfirm && \
 
-sudo pacman -Sy --needed base-devel git wget yajl --noconfirm  && \
-
-yaourt -S yay-bin
-
-yay -S telegram-desktop-bin --noconfirm && \
+yay -S make --noconfirm && \
 
 yay -S ttf-font powerline powerline-fonts noto-fonts-emoji ttf-fira-code ttf-liberation screenfetch figlet --noconfirm  && \
 
 ## utilities
 yay -S dbeaver redis-desktop-manager insomnia --noconfirm && \
 
-yay -S google-chrome visual-studio-code-bin && \
+yay -S google-chrome visual-studio-code-bin --noconfirm && \
 
-yay -S htop
-
-# enable gnome-extension
-yay -S gnome-tweaks chrome-gnome-shell && \
+yay -S htop --noconfirm
