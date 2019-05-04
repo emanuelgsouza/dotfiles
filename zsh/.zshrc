@@ -97,4 +97,13 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# commands
+gitHelperStore () {
+  git config credential.helper store
+}
+
+updateRepository () {
+  git checkout develop ; git merge master ; git push
+}
+
 screenfetch -E
