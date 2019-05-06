@@ -11,4 +11,4 @@ yay -S dbeaver redis-desktop-manager insomnia --noconfirm && \
 
 yay -S google-chrome visual-studio-code-bin --noconfirm && \
 
-yay -S htop --noconfirm
+yay -S htop flameshot --noconfirm
