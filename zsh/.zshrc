@@ -128,4 +128,8 @@ updateRepository () {
   git checkout develop ; git merge master ; git push
 }
 
+ruby () {
+  docker run --name ruby_exec -v $(pwd):/home --rm -i -t -w=/home ruby:slim ruby $1
+}
+
 screenfetch -E
